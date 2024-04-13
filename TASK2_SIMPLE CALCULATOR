@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    double a,b;
+    cout<<"enter a and b values:"<<endl;
+    cin>>a>>b;
+     char op;
+    cout<<"enter the opertion to be perform:"<<endl;
+    cin>>op;
+    double res;
+    switch(op)
+    {
+        case '+':res=a+b;
+                cout<<"result is:"<<res<<endl;
+                break;
+        case '-':res=a-b;
+                cout<<"result is:"<<res<<endl;
+                break;
+        case '*':res=a*b;
+                cout<<"result is:"<<res<<endl;
+                break;
+        case '/':if(b!=0)
+                {
+                res=a/b;
+                cout<<"result is:"<<res<<endl;
+                }
+                else
+                {
+                    cout<<"division is not possible"<<endl;
+                }
+    }
+    return 0;
+    
+}
