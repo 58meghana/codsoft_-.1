@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    srand(time(0));
+    int s=rand()%100+1,g,a=0;
+    cout<<"welcome to number guessing game"<<endl;
+    do
+    {
+        cout<<"guess any number:"<<endl;
+        cin>>g;
+        a++;
+        cout<<(g==s?"you guessed it in"+to_string(a)+"attempts\n":(g<s?"too low try again\n":"too high   try again\n"));
+        
+        
+    }while(g!=s);
+
+    return 0;
+}
